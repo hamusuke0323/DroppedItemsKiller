@@ -1,0 +1,4 @@
+{
+  "cmd.kdi.none": "No dropped items removed.",
+  "cmd.kdi.success": "Removed %s dropped item(s)."
+}

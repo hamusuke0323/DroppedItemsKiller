@@ -1,0 +1,12 @@
+{
+  "name": "Dropped Items Killer",
+  "description": "A plugin that kills dropped items.",
+  "version": "1.0.2",
+  "authors": [
+    "hamusuke2303"
+  ],
+  "mainClass": "com.hamusuke.killitems.Main",
+  "comments": [
+    "No comments"
+  ]
+}

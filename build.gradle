@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'com.hamusuke'
+version '1.0.2'
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation files('libs/grasscutter.jar')
+}
+
+jar {
+    from {
+        configurations.runtimeClasspath.collect {
+            if (it.name in []) {
+                println('Packaging ' + it.name)
+                it.isDirectory() ? it : zipTree(it)
+            }
+        }
+    } {
+        exclude('META-INF/LICENSE*')
+        exclude("META-INF/versions/9/module-info.class")
+        exclude("META-INF/NOTICE")
+    }
+
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    destinationDir = file(".")
+}

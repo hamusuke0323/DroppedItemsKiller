@@ -1,0 +1,55 @@
+libs
+
+*.class
+
+*.idea
+*.log
+
+*.ctxt
+
+.mtj.tmp/
+
+*.war
+*.nar
+*.ear
+*.zip
+*.gz
+*.rar
+
+hs_err_pid*
+
+.gradle
+
+build/
+out/
+
+gradle.properties
+
+# Eclipse
+.project
+.classpath
+.settings
+.metadata
+.properties
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.loadpath
+.recommenders
+
+# VSCode
+.vscode
+
+/*.jar
+/*.sh
+
+# lombok
+/.apt_generated/
+
+# macOS
+.DS_Store
+.directory
+data/hk4e/announcement/
