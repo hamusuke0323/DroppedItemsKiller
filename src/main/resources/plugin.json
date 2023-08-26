@@ -5,6 +5,7 @@
   "authors": [
     "hamusuke2303"
   ],
+  "api": 2,
   "mainClass": "com.hamusuke.killitems.Main",
   "comments": [
     "No comments"
